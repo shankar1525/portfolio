@@ -1,24 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Iframe from 'react-iframe'
+import RouterComponent from "./Router";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <RouterComponent />
     </div>
+    // <iframe src="http://192.168.0.199:5601/app/r/s/wbuTu" sandbox="allow-same-origin allow-scripts allow-forms allow-storage-access-by-user-activation allow-top-navigation allow-presentation" referrerPolicy="same-origin" width={1000} height={500}></iframe>
   );
 }
 
